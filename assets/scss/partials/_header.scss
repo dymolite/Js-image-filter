@@ -1,0 +1,26 @@
+header {
+    background-image: url('https://lh3.googleusercontent.com/8NteV8RUIOQSIpwkJDJdPHa-7975Mio9IAm-AGY40p21zFQP433wW9RdmEKK-vIZRRsnsZvRA5war1HKJAiioIy9i4AW_bn9ucU1BMMS');
+    height: 470px;
+    background-position: 600px;
+    background-repeat: no-repeat;
+    background-color: #F2F2F3;
+    .flowers-info {
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        h1 {
+            font-size: $font-size-big;
+        }
+        span {
+            color: $secondary-color;
+        }
+        p {
+            color: $primary-color;
+        }
+        img {
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import './partials/variables';
+@import './partials/navbar';
+@import './partials/header';
+
+.flower-list {
+    ul {
+        display: flex;
+        gap: 40px;
+    }
+    li {
+        color: $primary-color;
+        cursor: pointer;
+        font-size: $font-size;
+        transition: .3s;
+        &:hover {
+            color: $secondary-color;
+        }
+        &:focus{
+            color :orange;
+        }
+    }
+}
+.filter {
+    color: $primary-color;
+    i {
+        padding: 0 7px;
+    }
+}

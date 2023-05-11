@@ -1,0 +1,67 @@
+nav {
+  background-color: #fff;
+}
+nav .menu {
+  display: flex;
+  gap: 50px;
+}
+nav .menu a {
+  color: #3b3b3b;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logo {
+  width: 210px;
+}
+
+header {
+  background-image: url("https://lh3.googleusercontent.com/8NteV8RUIOQSIpwkJDJdPHa-7975Mio9IAm-AGY40p21zFQP433wW9RdmEKK-vIZRRsnsZvRA5war1HKJAiioIy9i4AW_bn9ucU1BMMS");
+  height: 470px;
+  background-position: 600px;
+  background-repeat: no-repeat;
+  background-color: #F2F2F3;
+}
+header .flowers-info {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+header .flowers-info h1 {
+  font-size: 41px;
+}
+header .flowers-info span {
+  color: #f34f3f;
+}
+header .flowers-info p {
+  color: #3b3b3b;
+}
+header .flowers-info img {
+  width: 200px;
+}
+
+.flower-list ul {
+  display: flex;
+  gap: 40px;
+}
+.flower-list li {
+  color: #3b3b3b;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.flower-list li:hover {
+  color: #f34f3f;
+}
+.flower-list li:focus {
+  color: orange;
+}
+
+.filter {
+  color: #3b3b3b;
+}
+.filter i {
+  padding: 0 7px;
+}/*# sourceMappingURL=style.css.map */
