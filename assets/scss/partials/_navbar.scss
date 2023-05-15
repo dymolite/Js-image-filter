@@ -2,14 +2,56 @@ nav{
     background-color: #fff;
     .menu {
         display: flex;
-        gap: 50px;
-        a {
-            color: $primary-color;
-            cursor: pointer;
-            font-size: $font-size;
+        gap: 35px;
+        li {
+            display: flex;
+            align-items: center;
+        }
+    }
+    a {
+        color: var(--primary-color);
+        cursor: pointer;
+        font-size: $font-size;
+        &:hover {
+            color: var(--secondary-color);
         }
     }
 }
 .logo {
     width: 210px;
+    display: flex;
+    align-items: center;
+}
+.menu-btn {
+    display: none;
+    align-items: center;
+    font-size: $font-size-2;
+}
+@media (max-width: 1300px) {
+    nav {
+        .logo{
+            width: 180px;
+        }
+        .menu {
+            gap: 20px;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    nav {
+        .logo{
+            width: 180px;
+        }
+        .menu {
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .menu-btn {
+        display: flex;
+    }
+    ul.menu {
+        display: none;
+    }
 }

@@ -1,46 +1,30 @@
-const list = document.querySelector(".flower-list .list");
-const items = document.querySelectorAll(".sell-item")
-const listItems = document.querySelectorAll(".list .list-item")
-function filter() {
-    list.addEventListener("click",  e => {
-        const getType = e.target.getAttribute("data-id");
-        console.log(getType);
-        
-        switch (getType) {
-            case "all":
-                getItems('sell-item')
-                break;
-            case "cactuses":
-                getItems(getType);
-                break;
-            case "exotic":
-                getItems(getType);
-                break;
-            case "greens":
-                getItems(getType);
-                break;
-            case "popular":
-                getItems(getType);
-                break;
-            case "various":
-                getItems(getType);
-                break;
-            case "winter":
-                getItems(getType);
-                break;
-            default:
-                break;
-        }
-    })
-}
-filter();
+/* const navbar = document.getElementsByTagName('nav');
+console.log(navbar);
 
-function getItems(className) {
-    items.forEach(item => {
-        if(item.classList.contains(className)){
-            item.style.display = "block";
-        } else {
-            item.style.display = "none"
-        }
-    })
-}
+navbar.addEventListener('scroll', () => {
+    console.log(parseInt(navbar.style.top));
+    if (parseInt(navbar.style.top)>= -100) {
+        navbar.style.top = 0;
+        navbar.style.position = "fixed";
+    }
+}) */
+
+
+const dlmodeBtn = document.getElementById('dlmodeBtn');
+dlmodeBtn.addEventListener('click', () => {
+  const body = document.querySelector('body');
+  const currentTheme = body.getAttribute('data-theme');
+  if (currentTheme == null || currentTheme === 'light') {
+    body.setAttribute('data-theme', 'dark');
+    console.log(body.dataset.theme);
+  } else {
+    body.setAttribute('data-theme', 'light');
+  }
+});
+
+
+
+
+
+
+

@@ -1,26 +1,79 @@
+[data-theme=light] {
+  --primary-color: $primary-color-light;
+  --secondary-color: $secondary-color-light;
+  --tertiary-color: $tertiary-color-light;
+  --bg-color: $bg-color-light;
+}
+
+[data-theme=dark] {
+  --primary-color: $primary-color-dark;
+  --secondary-color: $secondary-color-dark;
+  --tertiary-color: $tertiary-color-dark;
+  --bg-color: $bg-color-dark;
+}
+
 nav {
   background-color: #fff;
 }
 nav .menu {
   display: flex;
-  gap: 50px;
+  gap: 35px;
 }
-nav .menu a {
-  color: #3b3b3b;
+nav .menu li {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: var(--primary-color);
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
+}
+nav a:hover {
+  color: var(--secondary-color);
 }
 
 .logo {
   width: 210px;
+  display: flex;
+  align-items: center;
 }
 
+.menu-btn {
+  display: none;
+  align-items: center;
+  font-size: 20px;
+}
+
+@media (max-width: 1300px) {
+  nav .logo {
+    width: 180px;
+  }
+  nav .menu {
+    gap: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  nav .logo {
+    width: 180px;
+  }
+  nav .menu {
+    gap: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .menu-btn {
+    display: flex;
+  }
+  ul.menu {
+    display: none;
+  }
+}
 header {
   background-image: url("https://lh3.googleusercontent.com/8NteV8RUIOQSIpwkJDJdPHa-7975Mio9IAm-AGY40p21zFQP433wW9RdmEKK-vIZRRsnsZvRA5war1HKJAiioIy9i4AW_bn9ucU1BMMS");
   height: 470px;
-  background-position: 600px;
+  background-position: 550px;
   background-repeat: no-repeat;
-  background-color: #F2F2F3;
+  background-color: var(--bg-color);
 }
 header .flowers-info {
   height: 470px;
@@ -30,38 +83,216 @@ header .flowers-info {
   gap: 25px;
 }
 header .flowers-info h1 {
-  font-size: 41px;
+  font-size: 40px;
 }
 header .flowers-info span {
-  color: #f34f3f;
+  color: var(--secondary-color);
 }
 header .flowers-info p {
-  color: #3b3b3b;
+  color: var(--primary-color);
+  font-size: 12px;
 }
 header .flowers-info img {
   width: 200px;
 }
 
+.flower-list .categories {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  header {
+    background-position: bottom;
+    background-position-x: 450px;
+    background-size: 600px;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    background-position: bottom;
+    background-position-x: 400px;
+    background-size: 500px;
+    height: 350px;
+  }
+  header .flowers-info {
+    height: 350px;
+  }
+  .flower-list .list {
+    display: none;
+  }
+  .flower-list .categories {
+    display: flex;
+    align-items: center;
+  }
+  .flower-list i {
+    padding: 0 7px;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    background-position: bottom;
+    background-position-x: 320px;
+    background-size: 450px;
+    height: 350px;
+  }
+  header .flowers-info {
+    height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-position: bottom;
+    background-position-x: 270px;
+    background-size: 450px;
+    height: 350px;
+  }
+  header p {
+    display: none;
+  }
+  header .flowers-info {
+    height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    background-position: bottom;
+    background-size: 300px;
+    height: 450px;
+  }
+  header .flowers-info {
+    height: 350px;
+  }
+}
+#login-head {
+  margin: 3rem 0;
+  background-color: var(--bg-color);
+}
+#login-head .account-head {
+  padding: 4rem 0;
+  font-size: 40px;
+}
+#login-head .account-head p {
+  font-size: 20px;
+}
+
+#login {
+  color: var(--primary-color);
+  padding-bottom: 6rem;
+}
+#login h2 {
+  font-size: 30px;
+  padding: 1rem 0 1.5rem 0;
+}
+#login p {
+  padding-top: 1rem;
+  font-size: 16px;
+}
+#login span {
+  padding-right: 2rem;
+}
+#login .login-input-btn {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+#login .checkbox {
+  width: 30px;
+}
+#login .signup-btn {
+  margin: 1rem;
+}
+
+@media (max-width: 480px) {
+  .login-input-btn {
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 53px;
+  }
+  .account-head p {
+    font-size: 10px;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 43px;
+  }
+  #login .remember-inp {
+    padding-bottom: 1rem;
+  }
+  #login .login-input-btn {
+    display: block;
+  }
+  .btn {
+    width: 100%;
+  }
+}
 .flower-list ul {
   display: flex;
-  gap: 40px;
 }
 .flower-list li {
-  color: #3b3b3b;
+  color: var(--primary-color);
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.3s;
+  padding: 10px 20px;
 }
 .flower-list li:hover {
-  color: #f34f3f;
+  color: var(--secondary-color);
 }
 .flower-list li:focus {
   color: orange;
 }
 
 .filter {
-  color: #3b3b3b;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
 }
 .filter i {
   padding: 0 7px;
+}
+
+.sell-item img {
+  transition: 0.2s;
+  cursor: pointer;
+  transform-origin: bottom;
+}
+.sell-item img:hover {
+  transform: scale(1.03);
+}
+
+.active {
+  background-color: var(--bg-color);
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+  padding: 1rem;
+  outline-color: var(--secondary-color);
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: #fff;
+  transition: 0.2s;
+}
+.btn:focus {
+  background-color: #c43022;
+}
+
+a {
+  color: var(--primary-color);
+  transition: 0.25s;
+}
+a:hover {
+  color: var(--secondary-color);
 }/*# sourceMappingURL=style.css.map */

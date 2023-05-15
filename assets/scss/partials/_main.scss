@@ -1,0 +1,100 @@
+header {
+    background-image: url('https://lh3.googleusercontent.com/8NteV8RUIOQSIpwkJDJdPHa-7975Mio9IAm-AGY40p21zFQP433wW9RdmEKK-vIZRRsnsZvRA5war1HKJAiioIy9i4AW_bn9ucU1BMMS');
+    height: 470px;
+    background-position: 550px;
+    background-repeat: no-repeat;
+    background-color: var(--bg-color);
+    .flowers-info {
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        h1 {
+            font-size: $font-size-big;
+        }
+        span {
+            color: var(--secondary-color);
+        }
+        p {
+            color: var(--primary-color);
+            font-size: $font-size-mini;
+        }
+        img {
+            width: 200px;
+        }
+    }
+}
+.flower-list {
+    .categories {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    header {
+        background-position: bottom;
+        background-position-x: 450px;
+        background-size: 600px;
+    }
+}
+@media (max-width: 1024px) {
+    header {
+        background-position: bottom;
+        background-position-x: 400px;
+        background-size: 500px;
+        height: 350px;
+        .flowers-info {
+            height: 350px;
+        }
+    }
+    .flower-list {
+        .list {
+            display: none;
+        }
+        .categories {
+            display: flex;
+            align-items: center;
+        }
+        i {
+            padding: 0 7px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    header {
+        background-position: bottom;
+        background-position-x: 320px;
+        background-size: 450px;
+        height: 350px;
+        .flowers-info {
+            height: 350px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    header {
+        background-position: bottom;
+        background-position-x: 270px;
+        background-size: 450px;
+        height: 350px;
+        p {
+            display: none;
+        }
+        .flowers-info {
+            height: 350px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background-position: bottom;
+        background-size: 300px;
+        height: 450px;
+        .flowers-info {
+            height: 350px;
+            
+        }
+    }
+}

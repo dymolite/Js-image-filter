@@ -1,0 +1,71 @@
+#login-head {
+    margin: 3rem 0;
+    background-color: var(--bg-color);
+    .account-head {
+        padding: 4rem 0;
+        font-size: $font-size-big;
+        p {
+            font-size: $font-size-2;
+        }
+    }
+}
+#login {
+    color: var(--primary-color);
+    padding-bottom: 6rem;
+    h2 {
+        font-size: $font-size-average;
+        padding: 1rem 0 1.5rem 0;
+    }
+    p {
+        padding-top: 1rem;
+        font-size: $font-size;
+    }
+    span {
+        padding-right: 2rem;
+    }
+    .login-input-btn {
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+    }
+    .checkbox {
+        width: 30px;
+    }
+    .signup-btn {
+        margin: 1rem ;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-input-btn {
+        justify-content: space-between;
+    }
+    h1{
+        font-size: 53px;
+    }
+    .account-head {
+        p {
+            font-size: 10px;
+        }
+    }
+    .container {
+        width: 90%; 
+        margin: 0 auto;
+    };
+}
+@media (max-width: 350px) {
+    h1 {        
+        font-size: 43px;
+    }
+    #login {
+        .remember-inp {
+            padding-bottom: 1rem;
+        }
+        .login-input-btn {
+            display: block;
+        }
+    }
+    .btn {
+        width: 100%;
+    }
+}

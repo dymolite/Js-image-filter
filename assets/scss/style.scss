@@ -1,19 +1,19 @@
 @import './partials/variables';
 @import './partials/navbar';
-@import './partials/header';
-
+@import './partials/main';
+@import './partials/login';
 .flower-list {
     ul {
         display: flex;
-        gap: 40px;
     }
     li {
-        color: $primary-color;
+        color: var(--primary-color);
         cursor: pointer;
         font-size: $font-size;
         transition: .3s;
+        padding: 10px 20px;
         &:hover {
-            color: $secondary-color;
+            color: var(--secondary-color);
         }
         &:focus{
             color :orange;
@@ -21,8 +21,48 @@
     }
 }
 .filter {
-    color: $primary-color;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
     i {
         padding: 0 7px;
+    }
+}
+.sell-item {
+    img {
+        transition: .2s;
+        cursor: pointer;
+        transform-origin: bottom;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
+.active {
+    background-color: var(--bg-color);
+}
+input {
+    width: 100%;
+    font-size: $font-size-2;
+    padding: 1rem;
+    outline-color: var(--secondary-color);
+}
+.btn {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color:#fff;
+    transition: .2s;
+    &:focus {
+        background-color: #c43022;
+    }
+}
+
+a {
+    color: var(--primary-color);
+    transition: .25s;
+    &:hover {
+        color: var(--secondary-color);
     }
 }

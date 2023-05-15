@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <nav>
         <div class="container">
             <div class="row">
-                <div class="col-12 space-between p-4">
+                <div class="col-12 space-between p-5">
                     <div class="logo">
                         <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h2-logo-1.png" alt="">
                     </div>
@@ -26,118 +30,167 @@
                         <li><a href="">elements</a></li>
                         <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-store"></i><span> cart ($0)</span></a></li>
+                        <li id="dlmodeBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.3" stroke="#f34f3f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+                            </svg>
+                        </li>
                     </ul>
+                    <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
                 </div>
             </div>
         </div>
     </nav>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-4 direction-column">
-                    <div class="flowers-info">
-                        <h1>Send <span>flowers</span> like you mean it.</h1>
-                        <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special cursus a sit amet mauris.</p>
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h2-sign-img.png" alt="">
+    <main>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 col-lap-6 col-tab-10 col-mob-12 direction-column">
+                        <div class="flowers-info">
+                            <h1>Send <span>flowers</span> like you mean it.</h1>
+                            <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our
+                                flowers will make it special cursus a sit amet mauris.</p>
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h2-sign-img.png"
+                                alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 space-between p-4">
-                    <div class="flower-list text-uppercase">
-                        <ul class="list">
-                            <li class="list-item" data-id="all">all</li>
-                            <li class="list-item" data-id="cactuses">cactuses</li>
-                            <li class="list-item" data-id="exotic">exotic</li>
-                            <li class="list-item" data-id="greens">greens</li>
-                            <li class="list-item" data-id="popular">popular</li>
-                            <li class="list-item" data-id="various">various</li>
-                            <li class="list-item" data-id="winter">winter</li>
-                        </ul>
+        </header>
+        <section id="sell-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 space-between p-5">
+                        <div class="flower-list text-uppercase">
+                            <ul class="list">
+                                <li class="list-item active" data-id="all">all</li>
+                                <li class="list-item" data-id="cactuses">cactuses</li>
+                                <li class="list-item" data-id="exotic">exotic</li>
+                                <li class="list-item" data-id="greens">greens</li>
+                                <li class="list-item" data-id="popular">popular</li>
+                                <li class="list-item" data-id="various">various</li>
+                                <li class="list-item" data-id="winter">winter</li>
+                            </ul>
+                            <span class="categories">categories <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                        <div class="filter">
+                            <span>filter <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
                     </div>
-                    <div class="filter">
-                        <span>filter <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item popular winter">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>MAJESTY PALM</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3 p-3 sell-item popular winter">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg" alt="">
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>FOXGLOVE FLOWER</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
-                    <div class="flower-title text-center">
-                        <h5>MAJESTY PALM</h5>
-                        <p>add to cart</p>
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item popular winter">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>SWEET ALYSSUM</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3 p-3 sell-item">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg" alt="">
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item popular">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>SPRING SNOWFLAKE</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
-                    <div class="flower-title text-center">
-                        <h5>FOXGLOVE FLOWER</h5>
-                        <p>add to cart</p>
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item popular">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>SCARLET SAGE</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3 p-3 sell-item popular winter">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg" alt="">
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item cactuses">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>ROCK SOAPWORT</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
-                    <div class="flower-title text-center">
-                        <h5>SWEET ALYSSUM</h5>
-                        <p>add to cart</p>
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item greens">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>SUMMER SAVORY</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3 p-3 sell-item popular">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg" alt="">
-                    </div>
-                    <div class="flower-title text-center">
-                        <h5>SPRING SNOWFLAKE</h5>
-                        <p>add to cart</p>
-                    </div>
-                </div>
-                <div class="col-3 p-3 sell-item popular">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg" alt="">
-                    </div>
-                    <div class="flower-title text-center">
-                        <h5>SCARLET SAGE</h5>
-                        <p>add to cart</p>
-                    </div>
-                </div>
-                <div class="col-3 p-3 sell-item cactuses">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg" alt="">
-                    </div>
-                    <div class="flower-title text-center">
-                        <h5>ROCK SOAPWORT</h5>
-                        <p>add to cart</p>
-                    </div>
-                </div>
-                <div class="col-3 p-3 sell-item greens">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg" alt="">
-                    </div>
-                    <div class="flower-title text-center">
-                        <h5>SUMMER SAVORY</h5>
-                        <p>add to cart</p>
-                    </div>
-                </div>
-                <div class="col-3 p-3 sell-item exotic">
-                    <div class="flower-image">
-                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg" alt="">
-                    </div>
-                    <div class="flower-title text-center">
-                        <h5>WILD ROSES</h5>
-                        <p>add to cart</p>
+                    <div class="col-3 col-tab-4 col-mob-6 p-3 sell-item exotic">
+                        <div class="flower-image">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="flower-title text-center">
+                            <h5>WILD ROSES</h5>
+                            <p>add to cart</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <script src="./assets/js/main.js"></script>
+    <script>
+        const list = document.querySelector(".flower-list .list");
+        const items = document.querySelectorAll(".sell-item")
+        const listItems = document.querySelectorAll(".list .list-item")
+        function filter() {
+            list.addEventListener("click", e => {
+                const getType = e.target.getAttribute("data-id");
+
+                if (getType == "all") {
+                    getItems('sell-item')
+                } else {
+                    getItems(getType)
+                }
+            })
+        }
+        filter();
+
+        function getItems(className) {
+            items.forEach(item => {
+                if (item.classList.contains(className)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none"
+                }
+            })
+        }
+    </script>
 </body>
+
 </html>
